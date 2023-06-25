@@ -29,10 +29,10 @@ class MainActivity : AppCompatActivity() {
         binding.btn8.setOnClickListener { setTextFields("8") }
         binding.btn9.setOnClickListener { setTextFields("9") }
         //plus_btn
-        findViewById<TextView>(R.id.minus_btn).setOnClickListener { setTextFields("-") }
-        findViewById<TextView>(R.id.plus_btn).setOnClickListener { setTextFields("+") }
-        findViewById<TextView>(R.id.mult_btn).setOnClickListener { setTextFields("*") }
-        findViewById<TextView>(R.id.disivion_btn).setOnClickListener { setTextFields("/") }
+        binding.minusBtn.setOnClickListener { setTextFields("-") }
+        binding.plusBtn.setOnClickListener { setTextFields("+") }
+        binding.multBtn.setOnClickListener { setTextFields("*") }
+        binding.disivionBtn.setOnClickListener { setTextFields("/") }
         binding.square?.setOnClickListener { setTextFields("√") }
         //
         findViewById<TextView>(R.id.bracket_open_btn).setOnClickListener { setTextFields("(") }
